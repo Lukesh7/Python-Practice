@@ -1,0 +1,14 @@
+nums=[10, 5, 8, 20, 5, 8]
+
+#sort in decending 
+nums.sort(reverse=True)
+print(nums)
+#sum
+print(sum(nums))
+#max
+print(max(nums))
+#count
+print(nums.count(5))
+#enumerate
+for index,value in enumerate(nums):
+    print(index,value)
