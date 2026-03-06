@@ -1,0 +1,14 @@
+#open and read the file
+with open("test.txt","r") as file:
+    content=file.read()
+    print(content)
+    
+#appends a line
+file=open("test.txt", "a")
+file.write(" new line added")
+file.close()
+
+#overwrites file
+file=open("test.txt","w")
+file.write("Everything is going well")
+file.close()
