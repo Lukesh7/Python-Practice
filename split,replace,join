@@ -1,0 +1,12 @@
+text = "python is very powerful"
+
+print(text[:6])
+
+new_text=text.split()
+print(new_text)
+
+new_text=text.replace("powerful","easy")
+print(new_text)
+
+new_text="-".join(text)
+print(new_text)
