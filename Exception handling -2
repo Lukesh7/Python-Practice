@@ -1,0 +1,16 @@
+#manually raise error
+
+age = int (input("Enter your age:"))
+if age < 18:
+    raise ValueError ("Age must be 18 or above")
+print("Access Granted")
+
+#custom error
+
+class NegativeNumberError(Exception):
+    pass
+    
+num = int(input("Enter a number :"))
+if num<0:
+    raise NegativeNumberError("Negative numbers are not allowed")
+print("Number:",num)
