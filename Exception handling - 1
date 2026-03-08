@@ -1,0 +1,10 @@
+try:
+    num=int(input("Enter a number :"))
+    result=10/num
+    print(result)
+    
+except ValueError:
+    print("Please enter a number")
+
+except ZeroDivisionError:
+    print("The number cannot be Zero")
