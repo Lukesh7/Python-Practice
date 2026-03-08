@@ -1,0 +1,10 @@
+#try and except
+try:
+    num=int(input("Enter a number :"))
+    print(num)
+except:
+    print("Invalid Input!")
+     
+#finally
+finally:
+    print("program is succesful")
