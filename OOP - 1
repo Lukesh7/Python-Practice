@@ -1,0 +1,24 @@
+#student class
+
+#class
+class Student:
+    def __init__(self,name,marks):
+        self.name= name
+        self.marks= marks
+    def study(self):
+        print(self.name,"is studying")
+
+#object
+s1 = Student("Lukesh", 87) 
+s2 = Student("Bala",95)
+
+#printing name and marks scored
+
+print( "Name:",s1.name)
+print("Marks:",s1.marks)
+print("Name:" , s2.name)
+print("Marks:",s2.marks)
+
+#using study()
+s1.study()
+s2.study()
