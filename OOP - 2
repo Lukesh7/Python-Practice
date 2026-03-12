@@ -1,0 +1,17 @@
+#rectangle area calculator
+
+#creating Rectangle class
+class Rectangle:
+    def __init__(self,length,width):
+        self.length= length
+        self.width= width
+    def area(self):
+         print("Area of the rectangle:",self.length*self.width)
+
+#object          
+r1=Rectangle(5,10)
+r2=Rectangle(10,15)
+
+#calculates area of r1 and r2
+Rectangle.area(r1)
+Rectangle.area(r2)
