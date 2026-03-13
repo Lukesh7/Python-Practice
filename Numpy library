@@ -1,0 +1,28 @@
+#importing numpy library
+import numpy as np
+
+#creating an array
+arr= np.array([1,2,3,4])
+print("Eg array :",arr)
+
+#math operations with array
+# - , + ,*, %
+a1=np.array([5,6,7])
+print(a1 - 2)
+print(a1 + 2)
+print(a1 * 2)
+print(a1%2)
+
+#adding two arrays
+a=np.array([1,2,3])
+b=np.array([4,5,6])
+print(a + b)
+
+#mean (average)
+print("Mean :",np.mean(arr))
+
+#median(middle value after sorting)
+print("Median :",np.median(arr))
+
+#standard deviation
+print("Standard deviation :",np.std(arr))
