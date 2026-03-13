@@ -1,9 +1,0 @@
-age=int(input("Enter your age:"))
-license=input("Do you have license(yes/no):").lower()
-if age>=18:
-    if license=="yes":
-        print("You can drive")
-    else:
-         print("Get license first")
-else:
-        print("Too young to drive")
