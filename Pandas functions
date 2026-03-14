@@ -1,5 +1,6 @@
 # importing pandas library
 import pandas as pd
+import openpyxl
 
 # reading file
 df = pd.read_excel("salesdata.xlsx") 
