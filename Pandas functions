@@ -1,0 +1,42 @@
+# importing pandas library
+import pandas as pd
+
+# reading file
+df = pd.read_excel("salesdata.xlsx") 
+
+# first 3 rows
+print(df.head(3))
+
+# last 3 rows
+print(df.tail(3))
+
+# data structure
+print(df.info())
+
+# statistics
+print(df.describe())
+
+# select single column
+print(df["brand"])
+
+# select multiple columns
+print(df[["brand", "type"]])
+
+# filtering rows
+print(df[df["rate"] > 1500])
+
+# data aggregation
+print(df.groupby("rate")["price"].mean())
+
+# sorting values
+print(df.sort_values("product_id"))  # ascending
+print(df.sort_values("rate", ascending=False))  # descending
+
+# checking missing values
+print(df.isnull())
+
+# remove rows with missing values
+print(df.dropna())
+
+# fill missing values
+print(df.fillna(0))
