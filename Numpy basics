@@ -1,0 +1,35 @@
+#numpy basics
+import numpy as np
+
+#to create an array
+a = np.array([1,2,3,4])
+print(a) #[1 2 3 4]
+
+#numpy array supports mathematical ops
+print(a + 2) #[3 4 5 6]
+
+#array indexing
+print(a[0])#1
+print(a[-1])#4 negative indexing
+
+
+#2D array indexing
+b = np.array([
+    [1,2,3], #0
+    [4,5,6] #1
+]) 
+print(b[0, 1]) #2
+
+#Slicing - array[start:end]
+arr = np.array([10, 20, 30, 40])
+
+#1D array slicing
+print(arr[1:4]) #[20 30 40]
+
+#step slicing
+print(arr[::2]) #[10 30]
+
+#2D array slicing
+print(b[:, 1:]) # : - all rows, 1: - col from index 1
+#[[2 3]
+# [5 6]]
