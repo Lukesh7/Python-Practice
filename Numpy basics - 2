@@ -1,0 +1,8 @@
+#Reshaping 
+a = np.array([1,2,3,4,5,6])
+b = a.reshape(2,3) #changes to 2 row & 3 col
+print(b) #[[1 2 3]
+          #[4 5 6]]
+
+#Flatten Back to 1D
+print(b.flatten()) #[1 2 3 4 5 6]
