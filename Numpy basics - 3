@@ -1,0 +1,14 @@
+#Vectorized Operations
+#addition
+a = np.array([1,2,3])
+print(a + 2) #[3 4 5]
+
+#multiplication
+print(a * 2) #[2 4 6]
+
+#Array vs Array
+b = np.array([4,5,6])
+print(a + b) #[5 7 9]
+
+#Comparison
+print(a > 1) #[False  True  True]
