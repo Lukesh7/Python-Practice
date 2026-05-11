@@ -1,0 +1,10 @@
+# Mean, Median, Standard deviation
+#Mean (Average)
+a = np.array([1,2,3,4,5])
+print(np.mean(a)) #3.0
+
+#Median (Middle value after sorting)
+print(np.median(a))#3.0
+
+#Standard deviation(Measures data spread)
+print(np.std(a)) #1.4142135623730951
