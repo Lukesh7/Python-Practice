@@ -1,0 +1,14 @@
+#Random module
+print(np.random.rand()) #0.19695286363428022 - random number
+
+#Random array
+print(np.random.rand(3)) #[0.91051433 0.16934321 0.88151811]
+
+#Random integers
+#(start, end, how_many)
+print(np.random.randint(1, 10, 5)) #[4 8 9 4 1]
+
+#set seeds
+np.random.seed(42)
+
+print(np.random.randint(1, 10, 5)) #[7 4 8 5 7]
