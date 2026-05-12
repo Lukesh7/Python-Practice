@@ -1,0 +1,20 @@
+#Numpy exercises
+#1.create arr and print 1st and last element
+
+import numpy as np
+arr = np.array([1,2,3,4,5,6])
+
+print(arr[0])#1
+print(arr[-1]) #6
+
+#2.slice
+print(arr[1:4]) #[2 3 4]
+
+#3.reshape into 2*3
+print(arr.reshape(2, 3)) #[[1 2 3]
+                          #[4 5 6]]
+
+#4.find mean, median, std
+print(np.mean(arr)) #3.5
+print(np.median(arr)) #3.5
+print(np.std(arr)) #1.707825127659933
