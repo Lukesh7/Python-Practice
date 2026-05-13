@@ -29,3 +29,10 @@ print(df[['Product', 'Sales_Amount']])
 print(df.loc[0]) #1st row
 
 print(df.loc[0, 'Product']) #to specify the col of 1st row
+
+#filtering - sales amt above 5000
+print(df[df['Sales_Amount'] > 5000])
+
+#boolean indexing
+mask = df["Sales_Amount"] > 3000
+print(df[mask])
