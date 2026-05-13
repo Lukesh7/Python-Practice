@@ -1,0 +1,11 @@
+#Grouping & Aggregation
+
+#groupby() - Product wise totals
+print(df.groupby("Product")['Sales_Amount'].sum())
+
+#agg() - multiple calculations
+print(df.groupby('Product')
+      .agg({"Sales_Amount":['sum','max','mean']
+            }))
+#value count
+print(df['Product'].value_counts())
