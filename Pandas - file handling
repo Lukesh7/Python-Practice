@@ -1,0 +1,31 @@
+#Reading CSV
+df = pd.read_csv("sales_data_practice.csv")
+print(df)
+#Order_ID Product Region Sales_Amount Order_Date
+
+#Reading excel
+#df = pd.read_excel("sales.xlsx")
+
+#create df from selected coluns
+new_df = df[["Product", "Sales_Amount"]]
+print(new_df)
+
+#Data types
+print(df.dtypes)
+
+#shape (rows, col)
+print(df.shape) #22,5
+
+#Info
+print(df.info())
+
+#to select single column
+print(df['Product'])
+
+#to select multiple columns
+print(df[['Product', 'Sales_Amount']])
+
+#loc[] - lable based
+print(df.loc[0]) #1st row
+
+print(df.loc[0, 'Product']) #to specify the col of 1st row
