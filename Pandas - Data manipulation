@@ -1,0 +1,20 @@
+#Data manipulation
+
+#sort values - ascending
+print(df.sort_values("Sales_Amount"))
+
+#sort values - descending
+print(df.sort_values('Sales_Amount', ascending = False))
+
+#map()
+df['Region'] = df['Region'].map({
+    "North":'N',
+    'South': 'S',
+    'East': 'E',
+    'West': 'W'
+    })
+print(df['Region'])
+
+#Lambda functions
+square = lambda x: x*x
+print(square(5)) #25
