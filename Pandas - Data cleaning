@@ -1,0 +1,25 @@
+#Data cleaning
+
+#to check null values
+print(df.isnull())
+
+#to count null values
+print(df.isnull().sum())
+
+#drop missing rows
+df = df.dropna()
+print(df)
+
+#to fill missing values with 0
+df['Sales_Amount']=df['Sales_Amount'].fillna(0)
+print(df)
+
+#to check duplicates
+print(df.duplicated())
+
+#to remove duplicates
+print(df.drop_duplicates())
+
+#to rename a column
+df = df.rename(columns={'Sales_Amount':'Sales'})
+print(df)
