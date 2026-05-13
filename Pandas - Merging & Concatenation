@@ -1,0 +1,19 @@
+#Merging
+
+df1 = pd.DataFrame({
+    "ID":[1,2],
+    "Names":['Sam', 'Ram']
+    })
+
+df2 = pd.DataFrame({
+    "ID":[1,2],
+    "Salary":[50000, 45000]
+    })
+#merge()
+print(pd.merge(df1, df2, on = 'ID'))
+
+#Concatenation-concat()
+print(pd.concat([df1, df2]))
+
+#join()
+print(df1.join(df2))
