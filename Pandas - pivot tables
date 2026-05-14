@@ -1,0 +1,9 @@
+#Pivot Tables
+
+pivot = df.pivot_table(
+    values="Sales_Amount",
+    index="Product",
+    aggfunc="sum"
+)
+
+print(pivot)
