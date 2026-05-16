@@ -1,0 +1,10 @@
+#Line plot
+x = [1,2,3,4,5]
+y = [10,30,20,40,55]
+plt.plot(x,y)
+
+# to add labels & title
+plt.title('Sales Trend')
+plt.xlabel('Days')
+plt.ylabel('Sales')
+plt.show()
