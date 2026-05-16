@@ -1,0 +1,5 @@
+#Bar chart
+products = ["Laptop", "Phone", "Tablet"]
+sales = [50000, 30000, 25000]
+plt.bar(products, sales)
+plt.show()
