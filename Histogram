@@ -1,0 +1,8 @@
+#Histogram
+sales = [100,200,300,300,400,500]
+plt.hist(sales)
+plt.show()
+
+#Bins - intervals/groups
+plt.hist(sales, bins=5)
+plt.show()
