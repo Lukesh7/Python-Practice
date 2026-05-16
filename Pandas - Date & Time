@@ -1,0 +1,19 @@
+#Date & Time - Convert to Datetime
+df['Order_Date'] = pd.to_datetime(df['Order_Date'])
+print(df['Order_Date'])
+
+#to Extract year
+print(df['Order_Date'].dt.year)
+
+#to extract month
+print(df['Order_Date'].dt.month)
+
+#to extract day
+print(df['Order_Date'].dt.day)
+
+#Time series basics - Set Date as Index
+df = df.set_index("Order_Date")
+
+#Monthly sales
+monthly_sales = df.resample('ME')['Sales_Amount'].sum()
+print(monthly_sales)
