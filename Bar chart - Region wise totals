@@ -1,0 +1,8 @@
+#Bar chart - Region wise Sales
+region_sales = df.groupby('Region')['Sales_Amount'].sum()
+plt.figure(figsize = (7,5))
+plt.bar(region_sales.index, region_sales.values)
+plt.title('Region wise Sales')
+plt.xlabel('Region')
+plt.ylabel('Total Sales')
+plt.show()
