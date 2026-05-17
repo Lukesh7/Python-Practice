@@ -1,0 +1,20 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+#Data frame
+df = pd.read_csv('sales_data_practice.csv')
+#Convert Date column
+df['Order_Date'] = pd.to_datetime(df['Order_Date'])
+"""
+#Line plot - Sales Trend
+plt.figure(figsize=(8,5))
+plt.plot(
+    df['Order_Date'],
+    df['Sales_Amount'],
+    marker = 'o')
+plt.title('Sales Trend')
+plt.xlabel('Order date')
+plt.ylabel('Sales amount')
+plt.grid()
+plt.show()
