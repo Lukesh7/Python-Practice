@@ -1,0 +1,7 @@
+#Scatter plot - Order ID vs Sales
+plt.figure(figsize=(8,5))
+plt.scatter(df['Order_ID'], df['Sales_Amount'])
+plt.title('Order ID vs Sales')
+plt.xlabel('Order ID')
+plt.ylabel('Sales amount')
+plt.show()
