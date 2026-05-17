@@ -1,0 +1,8 @@
+#Bar chart - Product wise sales
+plt.figure(figsize=(8,5))
+product_sales = df.groupby('Product')['Sales_Amount'].sum()
+plt.bar(product_sales.index, product_sales.values)
+plt.title('Product wise sales')
+plt.xlabel('Product')
+plt.ylabel('Total Sales')
+plt.show()
