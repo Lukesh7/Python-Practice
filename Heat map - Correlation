@@ -1,0 +1,8 @@
+#Heat map - Correlation
+#Relationships btw numeric columns
+
+corr = df.corr(numeric_only = True)
+plt.figure(figsize =(5,4))
+sns.heatmap(corr, annot=True)
+plt.title('Correlation Heatmap')
+plt.show()
