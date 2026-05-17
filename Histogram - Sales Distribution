@@ -1,0 +1,7 @@
+#Histogram - Sales Distribution
+plt.figure(figsize=(8,5))
+plt.hist(df['Sales_Amount'], bins = 5)
+plt.title('Sales Distribution')
+plt.xlabel('Sales Amount')
+plt.ylabel('Frequency')
+plt.show()
